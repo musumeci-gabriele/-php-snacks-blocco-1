@@ -6,25 +6,25 @@
   // Olimpia Milano - Cantù | 55-60
 
   $matches = [
-    "Gennaio" => [
+    [
       "homeTeem" => "Roma",
       "hostTeem" => "Milano",
       "scoreHome" => 45,
       "scoreHost" => 55
     ],
-    "Febbraio" => [
+    [
       "homeTeem" => "Roma",
       "hostTeem" => "Verona",
       "scoreHome" => 75,
       "scoreHost" => 55
     ],
-    "Marzo" => [
+    [
       "homeTeem" => "Verona",
       "hostTeem" => "Palermo",
       "scoreHome" => 35,
       "scoreHost" => 23
     ],
-    "Aprile" => [
+    [
       "homeTeem" => "Bologna",
       "hostTeem" => "Roma",
       "scoreHome" => 45,
@@ -34,7 +34,10 @@
 
   ];
 
-  var_dump($matches);
+
+  for ($i = 0; $i < count($matches); $i++) {
+    var_dump($matches[$i]["homeTeem"]" - "$matches[$i]["hostTeem"]" | "$matches[$i]["scoreHome"]" - "$matches[$i]["scoreHost"] );
+  }
 ?>
 
 <!DOCTYPE html>
