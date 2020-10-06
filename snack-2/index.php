@@ -10,6 +10,13 @@
   $contactEmail = $_GET["email"];
   $contactAge = $_GET["age"];
 
+  if(empty($_GET["name"]) || empty($_GET["email"]) || empty($_GET["age"])){
+    echo "Errore Inserimento";
+    die;
+  }
+
+
+
   // Stampa del nome inserito e della sua lunghezza.
   echo "Il nome inserito e'"." $contactName "."e la sua lunghezza e' ".strlen($contactName)."."."<br/>";
 

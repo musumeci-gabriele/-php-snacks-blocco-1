@@ -30,12 +30,11 @@
       "scoreHome" => 45,
       "scoreHost" => 77
     ],
-
   ];
 
   // ciclo for per stampare il contenuto dei singoli array con "<br />" per andare a capo
   for ($i = 0; $i < count($matches); $i++) {
-    echo ($matches[$i]["homeTeem"]." - ".$matches[$i]["hostTeem"]." | ".$matches[$i]["scoreHome"]." - ".$matches[$i]["scoreHost"] )."<br />";
+    echo ($matches[$i]["homeTeem"]." - ".$matches[$i]["hostTeem"]." | ".$matches[$i]["scoreHome"]."-".$matches[$i]["scoreHost"] )."<br />";
 
   }
 ?>
